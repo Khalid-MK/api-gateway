@@ -77,7 +77,7 @@ router.all(`/:apiName/:path(*)?`, (req, res) => {
             headers: req.headers,
             data: req.body
         }
-
+        // console.log(config)
         axios(config)
             .then((response) => {
                 res.send(response.data);
